@@ -267,16 +267,20 @@ a.loginbtn:hover:before {
   color: #1b201e;
 }
 
+/* this is the submit button */
 .cpw {
-  width: 300px;
+  width: 150px;
   height: 50px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   border-top-left-radius: 25px;
   background-color: #8b7d33;
-  color: #1b201e;
+  color: #ffd700;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
 }
+/* this is the submit button */
 
 .name {
   width: 300px;
@@ -427,8 +431,8 @@ a.btna:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  height: 30px;
-  width: 71px;
+  height: 20px;
+  width: 80px;
   margin-top: 1px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -462,7 +466,7 @@ a.btnh:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  height: 30px;
+  height: 20px;
   width: 59px;
   margin-top: 1px;
   opacity: 0;
@@ -497,7 +501,7 @@ a.btnc:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  height: 30px;
+  height: 20px;
   width: 87px;
   margin-top: 1px;
   opacity: 0;
@@ -572,7 +576,7 @@ a.btnc:hover:before {
 }
 
 .price {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: #8b7d33;
   font-size: 20px;
 }
@@ -591,6 +595,17 @@ a.btnc:hover:before {
   text-align: center;
 }
 
+.buy-button {
+  background-color: #8b7d33;
+  color: #ffd700;
+  width: 100px;
+  height: 30px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 15px;
+}
+
 /* C O L L E C T I O N S */
 
 /* A R T I S T S */
@@ -602,8 +617,8 @@ a.btncl:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  height: 30px;
-  width: 125px;
+  height: 20px;
+  width: 135px;
   margin-top: 1px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -637,7 +652,7 @@ a.btnho:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  height: 30px;
+  height: 20px;
   width: 59px;
   margin-top: 1px;
   opacity: 0;
@@ -672,8 +687,8 @@ a.btnc:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  height: 30px;
-  width: 87px;
+  height: 20px;
+  width: 93px;
   margin-top: 1px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -752,7 +767,6 @@ a.btnc:hover:before {
 
 /* A R T I S T S */
 
-
 /* L O C A T I O N */
 
 .finds {
@@ -802,11 +816,10 @@ a.btnc:hover:before {
   position: absolute;
   height: 400px;
   width: 400px;
-  left: 270px;
-  bottom: -600px;
+  left: 320px;
+  bottom: -470px;
 }
 /* L O C A T I O N */
-
 
 /* C O N T A C T */
 
@@ -816,8 +829,8 @@ a.btnar:before {
   position: absolute;
   left: 0;
   display: inline-block;
-  height: 30px;
-  width: 71px;
+  height: 20px;
+  width: 80px;
   margin-top: 1px;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -855,14 +868,15 @@ a.btnar:hover:before {
 }
 
 .cntc {
-  position: absolute;
+  /* position: absolute;
   top: 50px;
-  right: 250px;
+  right: 250px; */
+  margin: auto;
   border: 1px solid #8b7d33;
   text-align: center;
   height: 700px;
   width: 800px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .credential {
@@ -872,6 +886,7 @@ a.btnar:hover:before {
 }
 
 .undercred {
+  font-family: "Roboto Slab", serif;
   color: #8b7d33;
 }
 
@@ -885,14 +900,17 @@ h3 {
 
 .fb {
   color: rgb(69, 69, 254);
+  font-size: 25px;
 }
 
 .inst {
   color: palevioletred;
+  font-size: 25px;
 }
 
 .tw {
   color: white;
+  font-size: 25px;
 }
 
 i {

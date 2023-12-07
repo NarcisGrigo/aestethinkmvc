@@ -32,7 +32,6 @@ class BaseEntity
         $class = get_called_class();
         $class = explode("\\", $class);
         $table = $class[count($class) - 1];
-        // strtolower = met tous les caractères d'un string en minuscule
         return strToLower($table);
     }
 }

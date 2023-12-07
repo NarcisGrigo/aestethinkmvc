@@ -1,7 +1,7 @@
 RewriteEngine On
 
 # Règles de réécriture d'URL :
-
+RewriteRule ^public/ - [L]
 # pour les routes
 
 #La règle de réécriture RewriteRule ^$ est utilisée pour rediriger l'URL racine vers une autre page ou une autre URL. Le ^$ signifie que la règle s'appliquera uniquement lorsque l'URL demandée est la racine du site, c'est-à-dire lorsqu'il n'y a rien après le nom de domaine dans l'URL.

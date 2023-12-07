@@ -4,17 +4,21 @@ namespace Model\Entity;
 
 class User extends BaseEntity
 {
-    private $user;
+    private $name;
     private $email;
     private $password;
     private $role;
 
+    public function __construct()
+    {
+        $this->role = 'ROLE_USER';
+    }
     /**
      * Get the value of user
      */
-    public function getUser()
+    public function getName()
     {
-        return $this->user;
+        return $this->name;
     }
 
     /**
@@ -22,9 +26,9 @@ class User extends BaseEntity
      *
      * @return  self
      */
-    public function setUser($user)
+    public function setName($name)
     {
-        $this->user = $user;
+        $this->name = $name;
 
         return $this;
     }

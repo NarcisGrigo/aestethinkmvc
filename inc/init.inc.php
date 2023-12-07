@@ -5,6 +5,7 @@
 require "autoload.php";
 session_start();
 include __DIR__ . "/functions.inc.php";
-define("ROOT", "/");
+define("ROOT", "/aestethinkmvc/");
 define("ROLE_USER", 10);
+define("ROLE_ARTIST", 15);
 define("ROLE_ADMIN", 50);

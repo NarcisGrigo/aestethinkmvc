@@ -12,13 +12,13 @@ class BaseRepository
     public function __construct()
     {
         $db = new Database;
-        $this->dbConnection = $db->bddConnect();
+        $this->dbConnection = $db->dbConnexion();
     }
     public function findAll(BaseEntity $table): ?array
     {
         $requete = $this->dbConnection->query("SELECT * FROM $table");
         if ($requete) {
-            $class = "Model\Entity\\" . ucfirst($table); // ucfirst : majuscule au début de la chaine de caractères
+            $class = "Model\Entity\\" . ucfirst($table);
             return $requete->fetchAll(\PDO::FETCH_CLASS, $class);
         }
         return null;
@@ -27,9 +27,8 @@ class BaseRepository
     public function findByAttributes($tableName, $attributes = [])
     {
         if (!is_array($attributes)) {
-            return false; // Retourne false si le tableau d'attributs est vide ou incorrect.
+            return false; // Returns false if the table attributes are incorrect or empty.
         }
-        // Construction de la requête SELECT
         $query = "SELECT * FROM $tableName WHERE ";
 
         $conditions = [];
@@ -55,7 +54,6 @@ class BaseRepository
                 $request->setFetchMode(\PDO::FETCH_CLASS, $class);
                 return $request->fetch();
             } else if ($request->rowCount() > 1) {
-                // ucfirst : majuscule au début de la chaine de caractères
                 $result = $request->fetchAll(\PDO::FETCH_CLASS, $class);
                 return $result;
             }

@@ -7,10 +7,10 @@ use Service\Session;
 
 class UserRepository extends BaseRepository
 {
-    public function findByPseudo($user)
+    public function findByEmail($email)
     {
-        $requete = $this->dbConnection->prepare("SELECT * FROM user WHERE user = :user");
-        $requete->bindParam(":user", $user);
+        $requete = $this->dbConnection->prepare("SELECT * FROM user WHERE email = :email");
+        $requete->bindParam(":email", $email);
 
         if ($requete->execute()) {
             if ($requete->rowCount() == 1) {
@@ -26,33 +26,33 @@ class UserRepository extends BaseRepository
 
     public function insertUser(User $user)
     {
-        $sql = "INSERT INTO user (user, email, password, role) VALUES (:user, :email, :password, :role)";
+        $sql = "INSERT INTO user (name, email, password, role) VALUES (:name, :email, :password, :role)";
         $requete = $this->dbConnection->prepare($sql);
-        $requete->bindValue(":user", $user->getUser());
+        $requete->bindValue(":name", $user->getName());
         $requete->bindValue(":email", $user->getEmail());
         $requete->bindValue(":password", $user->getPassword());
         $requete->bindValue(":role", $user->getRole());
         $requete = $requete->execute();
         if ($requete) {
             if ($requete == 1) {
-                Session::addMessage("success", "Le nouvel utilisateur a bien été enregistré");
+                Session::addMessage("success", "The new user was successfully registered");
                 return true;
             }
-            Session::addMessage("danger", "Erreur : l'utilisateur n'a pas été enregisté");
+            Session::addMessage("danger", "Error : the user couldn't be registered");
             return false;
         }
-        Session::addMessage("danger", "Erreur SQL");
+        Session::addMessage("danger", "SQL Error");
         return null;
     }
 
 
-    public function updateAbonne(User $user)
+    public function updateUser(User $user)
     {
         $sql = "UPDATE user
-                         SET user = :user, email = :email, password = :password, role = :role
+                         SET name = :name, email = :email, password = :password, role = :role
                          WHERE id = :id";
         $requete = $this->dbConnection->prepare($sql);
-        $requete->bindValue(":user", $user->getUser());
+        $requete->bindValue(":name", $user->getName());
         $requete->bindValue(":email", $user->getEmail());
         $requete->bindValue(":password", $user->getPassword());
         $requete->bindValue(":role", $user->getRole());
@@ -60,13 +60,13 @@ class UserRepository extends BaseRepository
         $requete = $requete->execute();
         if ($requete) {
             if ($requete == 1) {
-                Session::addMessage("success", "La mise à jour de l'utilisateur a bien été éffectuée");
+                Session::addMessage("success", "An update of the user has successfully been made");
                 return true;
             }
-            Session::addMessage("danger", "Erreur : l'utilisateur n'a pas été mise à jour");
+            Session::addMessage("danger", "Error : the user couldn't be updated");
             return false;
         }
-        Session::addMessage("danger", "Erreur SQL");
+        Session::addMessage("danger", "SQL Error");
         return null;
     }
 }

@@ -3,8 +3,9 @@
 namespace Controller;
 
 use Model\Entity\User;
-use Model\Repository\UserRepository;
 use Form\UserHandleRequest;
+use Controller\BaseController;
+use Model\Repository\UserRepository;
 
 class UserController extends BaseController
 {
@@ -22,7 +23,7 @@ class UserController extends BaseController
     {
         $users = $this->userRepository->findAll($this->user);
 
-        $this->render("user/index.html.php", [
+        $this->render("login.html.php", [
             "h1" => "Liste des utilisateurs",
             "users" => $users
         ]);
@@ -39,8 +40,8 @@ class UserController extends BaseController
 
         $errors = $this->form->getEerrorsForm();
 
-        return $this->render("user/form.html.php", [
-            "h1" => "Ajouter un nouvel utilisateur",
+        return $this->render("user/register.html.php", [
+            "h4" => "Ajouter un nouvel utilisateur",
             "user" => $user,
             "errors" => $errors
         ]);
@@ -51,6 +52,10 @@ class UserController extends BaseController
     }
 
     public function show($id)
+    {
+
+    }
+    public function login()
     {
 
     }
