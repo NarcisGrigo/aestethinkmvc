@@ -1,6 +1,7 @@
 <?php
 
 use Model\Database;
+
 session_start();
 require_once("../Model/Database.php");
 
@@ -16,21 +17,21 @@ if (isset($_POST['submit'])) {
         $userInfo = $request->fetch(PDO::FETCH_ASSOC);
         if (empty($userInfo)) {
             echo "user unknown";
-        }else {
+        } else {
             if (password_verify($password, $userInfo['password'])) {
                 if ($userInfo['role'] == "admin") {
                     $_SESSION['role'] = $userInfo['role'];
                     header("Location: admin/");
-                }else {
+                } else {
                     $_SESSION['role'] = $userInfo['role'];
                     $_SESSION['id'] = $userInfo['id'];
-                    header("Location: http://localhost/aestethinkmvc/views/collections.php");
+                    header("Location: http://localhost/aesthetinkmvc/views/collections.php");
                 }
-            }else {
+            } else {
                 echo " Oh, you're being clever !!";
             }
         }
-    }catch (PDOException $e) {
+    } catch (PDOException $e) {
         $e->getMessage();
     }
 }

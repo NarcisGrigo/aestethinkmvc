@@ -4,9 +4,9 @@ require_once("../public/header.html.php");
 
 <body class="contbody">
     <nav>
-        <a href="http://localhost/aestethinkmvc/views/home.html.php" class="btnho">HOME</a>
-        <a href="http://localhost/aestethinkmvc/views/collections.php" class="btncl">COLLECTIONS</a>
-        <a href="http://localhost/aestethinkmvc/views/artists.php" class="btnar">ARTISTS</a>
+        <a href="http://localhost/aesthetinkmvc/views/home.html.php" class="btnho">HOME</a>
+        <a href="http://localhost/aesthetinkmvc/views/collections.php" class="btncl">COLLECTIONS</a>
+        <a href="http://localhost/aesthetinkmvc/views/artists.php" class="btnar">ARTISTS</a>
     </nav>
     <div>
         <img src="/img/aesthhand.jpg" alt="" class="aesthand" />
@@ -16,7 +16,7 @@ require_once("../public/header.html.php");
         <h4 class="credential">PHONE</h4>
         <p class="undercred">(123) 456-7890</p>
         <h4 class="credential">EMAIL</h4>
-        <p class="undercred">aestethink@tattoo.com</p>
+        <p class="undercred">aesthetink@tattoo.com</p>
         <h4 class="credential">SOCIALS</h4>
         <i class="fb fa-brands fa-facebook-f"></i>
         <i class="inst fa-brands fa-instagram"></i>

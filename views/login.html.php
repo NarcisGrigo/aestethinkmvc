@@ -9,7 +9,7 @@ require_once("../public/header.html.php");
             <div>
                 <h2>Login</h2>
             </div>
-            <form action="../../aestethinkmvc/Model/loginModel.php" method="POST">
+            <form action="../../aesthetinkmvc/Model/loginModel.php" method="POST">
                 <input type="email" placeholder="&nbsp E &nbsp M &nbsp A &nbsp I &nbsp L" class="email" name="email" />
                 <label for="email"></label>
                 <br />
@@ -25,7 +25,7 @@ require_once("../public/header.html.php");
             </form>
         </div>
         <div>
-            <img src="/aestethinkmvc/public/assets/img/d3090dde93588424e7563d5b40a0a795.jpg" alt="" class="hands" />
+            <img src="/aesthetinkmvc/public/assets/img/d3090dde93588424e7563d5b40a0a795.jpg" alt="" class="hands" />
         </div>
     </main>
 </body>

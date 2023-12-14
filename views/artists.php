@@ -4,16 +4,16 @@ require_once("../public/header.html.php");
 
 <body class="artistbody">
     <nav>
-        <a href="http://localhost/aestethinkmvc/views/home.html.php" class="btnho">HOME</a>
-        <a href="http://localhost/aestethinkmvc/views/collections.php" class="btncl">COLLECTIONS</a>
-        <a href="http://localhost/aestethinkmvc/views/contact.php" class="btnc">CONTACT</a>
+        <a href="./home.html.php" class="btnho">HOME</a>
+        <a href="http://localhost/aesthetinkmvc/views/collections.php" class="btncl">COLLECTIONS</a>
+        <a href="http://localhost/aesthetinkmvc/views/contact.php" class="btnc">CONTACT</a>
     </nav>
     <h2 class="value">The value we offer</h2>
     <div class="artistpg">
-        <img src="/aestethinkmvc/public/assets/img/stephane.jpg" alt="artist" class="artists" />
-        <img src="/aestethinkmvc/public/assets/img/aladino.jpg" alt="artist" class="artists" />
-        <img src="/aestethinkmvc/public/assets/img/alisya.jpg" alt="artist" class="artists" />
-        <img src="/aestethinkmvc/public/assets/img/howard.jpg" alt="artist" class="artists" />
+        <img src="/aesthetinkmvc/public/assets/img/stephane.jpg" alt="artist" class="artists" />
+        <img src="/aesthetinkmvc/public/assets/img/aladino.jpg" alt="artist" class="artists" />
+        <img src="/aesthetinkmvc/public/assets/img/alisya.jpg" alt="artist" class="artists" />
+        <img src="/aesthetinkmvc/public/assets/img/howard.jpg" alt="artist" class="artists" />
     </div>
     <div class="nameartist">
         <p class="stph">Stephane</p>
@@ -30,7 +30,7 @@ require_once("../public/header.html.php");
     <h2 class="finds">Where to find us</h2>
     <div class="borderblk"></div>
     <div class="findmap">
-        <img src="/aestethinkmvc/public/assets/img/Sydney-Map.jpg" alt="" class="maps" />
+        <img src="/aesthetinkmvc/public/assets/img/Sydney-Map.jpg" alt="" class="maps" />
         <div class="lorem">
             <h4 class="bking">Booking needed</h4>
             <br />

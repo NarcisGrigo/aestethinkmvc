@@ -4,7 +4,7 @@ require_once("public/header.html.php");
 <div class="box2"></div>
 <div class="register">
     <div>
-        <img src="/aestethinkmvc/public/assets/img/9af5b39a70de1509eb2300a0328fe5b1.jpg" alt="" />
+        <img src="/aesthetinkmvc/public/assets/img/9af5b39a70de1509eb2300a0328fe5b1.jpg" alt="" />
     </div>
     <div class="reg">
         <div class="titlereg">

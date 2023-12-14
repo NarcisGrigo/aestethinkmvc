@@ -7,8 +7,8 @@ require_once("../public/header.html.php");
     <img src="../public/assets/img/header3.jpg" style="width: 600px" />
 </div>
 <nav>
-    <a href="http://localhost/aestethinkmvc/views/login.html.php" class="loginbtn">LOGIN</a>
-    <a href="http://localhost/aestethinkmvc/register" class="registerbtn">REGISTER</a>
+    <a href="http://localhost/aesthetinkmvc/views/login.html.php" class="loginbtn">LOGIN</a>
+    <a href="http://localhost/aesthetinkmvc/register" class="registerbtn">REGISTER</a>
 </nav>
 <div class="title">
     <h1>AesthetINK</h1>
