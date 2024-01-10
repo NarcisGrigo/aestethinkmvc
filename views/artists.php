@@ -8,6 +8,11 @@ require_once("../public/header.html.php");
         <a href="http://localhost/aesthetinkmvc/views/collections.php" class="btncl">COLLECTIONS</a>
         <a href="http://localhost/aesthetinkmvc/views/contact.php" class="btnc">CONTACT</a>
     </nav>
+
+        <form action="logout.php" method="post">
+            <input type="submit" class="logout custom-button" value="Logout"
+                style="background-color: #1b201e; color:#ffd700; width:120px; height:35px; font-family: Raleway, sans-serif; font-size:25px; border:none; outline:none; box-shadow:none; cursor:pointer;">
+        </form>
     <h2 class="value">The value we offer</h2>
     <div class="artistpg">
         <img src="/aesthetinkmvc/public/assets/img/stephane.jpg" alt="artist" class="artists" />
