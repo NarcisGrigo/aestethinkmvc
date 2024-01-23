@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../aesthetinkmvc/public/assets/css/style.css">
+    <link rel="stylesheet" href="../../aesthetinkmvc/views/shoppingcart/style.css">
     <title>AesthetINK</title>
 </head>
 

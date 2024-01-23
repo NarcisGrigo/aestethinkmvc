@@ -4,7 +4,7 @@ require_once("../public/header.html.php");
 
 <body class="artistbody">
     <nav>
-        <a href="./home.html.php" class="btnho">HOME</a>
+        <!-- <a href="./home.html.php" class="btnho">HOME</a> -->
         <a href="http://localhost/aesthetinkmvc/views/collections.php" class="btncl">COLLECTIONS</a>
         <a href="http://localhost/aesthetinkmvc/views/contact.php" class="btnc">CONTACT</a>
     </nav>
@@ -50,6 +50,9 @@ require_once("../public/header.html.php");
         </div>
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+<?php
+require_once("../public/footer.html.php");
+?>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->

@@ -32,11 +32,14 @@ require_once("public/header.html.php");
         </form>
     </div>
 </div>
-<script>
+<?php
+require_once("../public/footer.html.php");
+?>
+<!-- <script>
     document.getElementById('myForm').addEventListener('submit', function (event) {
         if (!document.getElementById('check').checked) {
             alert('Please accept the terms and conditions.');
             event.preventDefault(); // Prevent the form from submitting
         }
     });
-</script>
+</script> -->
